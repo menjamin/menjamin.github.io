@@ -56,6 +56,15 @@ body{
     margin: 0 auto;
 }
 
+#musicBox{
+	margin-right: 30px;
+	margin-bottom: 0px;
+	color: yellow;
+	font-size: small;
+	font-weight: bolder;
+	text-align: right;
+}
+
 #top, #bottom, #left, #right {
 	background: darkred;
 	position: fixed;

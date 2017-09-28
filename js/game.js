@@ -11,6 +11,17 @@ var gameSpeed = setInterval(game, 1000/speed);
 var blueLoose = false;
 var redLoose = false;
 
+if(Math.random()*10 > 5){
+    myAudio = new Audio('../music/wimpsonssaveChromecastVersionMST.mp3'); 
+}else{
+    myAudio = new Audio('../music/80s_crap_mix.mp3'); 
+}
+myAudio.addEventListener('ended', function() {
+    this.currentTime = 0;
+    this.play();
+}, false);
+myAudio.play();
+
 //gamesize
 gs = 12.5;
 tc = 50;
